@@ -46,7 +46,7 @@ Your job is to create the mapper and the reducer for each task, explain how they
 You will create and run your software application using [Apache Hadoop](http://hadoop.apache.org/), a framework for distributed processing of large data sets across multiple computers (or even on a single node) using the map/reduce model. Even though you can install and configure Hadoop on your computers, I recommend that you use a virtual machine (VM) of [Hortonworks Sandbox](https://www.cloudera.com/tutorials/getting-started-with-hdp-sandbox.html), a preconfigured Apache Hadoop installation with a comprehensive software stack. To run the VM, you can install vmWare or VirtualBox. As UIC students, you have access to free vmWare licenses, go to http://go.uic.edu/csvmware to obtain your free license. In some cases, I may have to provide your email addresses to a department administrator to enable your free VM academic licenses. Please notify me if you cannot register and gain access to the webstore.
 
 The steps for obtaining your free academic vmWare licenses are the following:
-- Contact [Mr.Phil Bertran](pbeltr1@uic.edu) and CC to [DrMark](drmark@uic.edu) to obtain access to the vmWare academic program.
+- Contact [Mr.Phil Beltran](pbeltr1@uic.edu) and CC to [DrMark](drmark@uic.edu) to obtain access to the vmWare academic program.
 - One approved, go to [Onthehub vmWare](http://go.uic.edu/csvmware).
 - Click on the "sign in" link at the top.
 - Click on "register".
