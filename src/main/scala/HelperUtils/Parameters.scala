@@ -41,6 +41,17 @@ object Parameters:
       if math.abs(x - y) <= COMPARETHREASHOLD then 0 else if x - y > COMPARETHREASHOLD then -1 else 1
   }
 
+  private def timeoutRange: Tuple2[Long, Long] =
+    val lst = Try(config.getLongList(s"randomLogGenerator.TimePeriod").asScala.toList) match {
+      case Success(value) => value.sorted
+      case Failure(exception) => logger.error(s"No config parameter Timeout is provided")
+        throw new IllegalArgumentException(s"No config data for Timeout")
+    }
+    if lst.length != 2 then throw new IllegalArgumentException(s"Incorrect range of values is specified for Timeout")
+    (lst(0), lst(1))
+  end timeoutRange
+
+
   //for config parameter likelihood ranges, e.g., error = [0.3, 0.1], they are obtained from the conf file
   //and then sorted in the ascending order
   private def logMsgRange(logTypeName: String): Tuple2[Double, Double] =
@@ -92,12 +103,12 @@ object Parameters:
   val generatingPattern = getParam("Pattern", "([a-c][e-g][0-3]|[A-Z][5-9][f-w]){5,15}")
   val patternFrequency = getParam("Frequency", 0.05d)
   val randomSeed = getParam("Seed", System.currentTimeMillis())
-  val timePeriod = getParam("TimePeriod", 1000)
+  val timePeriod = timeoutRange
   val maxCount = getParam("MaxCount", 0)
   val runDurationInMinutes: Duration = if Parameters.maxCount > 0 then Duration.Inf else getParam("DurationMinutes", 0).minutes
 
   if Parameters.maxCount > 0 then logger.warn(s"Max count ${Parameters.maxCount} is used to create records instead of timeouts")
-  if timePeriod < 0 then throw new IllegalArgumentException("Timer period cannot be less than zero")
+  if timePeriod._1 < 0 || timePeriod._2 < 0 then throw new IllegalArgumentException("Timer period cannot be less than zero")
 
   //it is important to determine if likelihood ranges are not nested, otherwise
   //it would be difficult to make sense of the types of the generated log messages
