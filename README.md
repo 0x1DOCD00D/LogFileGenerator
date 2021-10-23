@@ -1,7 +1,7 @@
 # Homework 3
 ### The goal of this homework is for students to gain experience with solving a distributed computational problem using cloud computing technologies by designing and implementing a RESTful service and a lambda function that are accessed from clients using gRPC.
 ### Grade: 8%
-#### This Git repo contains the description of the second homework that uses this implementation of a log file generator in Scala. Students should clone this repo using the command ```git clone git@github.com:0x1DOCD00D/LogFileGenerator.git```.
+#### This Git repo contains the description of the third and final homework that uses this implementation of a log file generator in Scala. Students should clone this repo using the command ```git clone git@github.com:0x1DOCD00D/LogFileGenerator.git```.
 
 ## Preliminaries
 As part of the previous homework assignment you learned to create and manage your Git repository, create your application in Scala, create tests using widely popular Scalatest framework, and to configure your big data processing environments. Doing this homework is essential for successful completion of the rest of this course, since the course project will depend on this homework: create randomly generated log files that represent big data, parse and analyze them, change their content and structure and process them in the cloud using a big data analysis framework called Spark.
