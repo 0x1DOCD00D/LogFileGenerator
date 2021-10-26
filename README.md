@@ -51,7 +51,7 @@ The starting point is to follow the guide on [AWS Serverless Application Model (
 
 Next, you will learn how to create a [gRPC](https://grpc.io/) client program. I find this [tutorial on gRPC on HTTP/2](https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/) very well written by Jean de Klerk, Developer Program Engineer at Google.
 
-After that you will learn about [AWS API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) and determine how to use it to create RESTful API for your implementation of the calculator lambda function.
+After that you will learn about [AWS API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) and determine how to use it to create RESTful API for your implementation of the lambda function.
 
 A guide to keep you on the right path is the [blog entry](https://blog.coinbase.com/grpc-to-aws-lambda-is-it-possible-4b29a9171d7f) that describes the process of using gRPC for invoking AWS lambda function in Go.
 
