@@ -1,7 +1,6 @@
 # Course Project
 ### The goal of this course project is to gain experience with creating a streaming data pipeline with cloud computing technologies by designing and implementing an actor-model service using [Akka](https://akka.io/) that ingests logfile generated data in real time and delivers it via an event-based service called [Kafka](https://kafka.apache.org/) to [Spark](https://spark.apache.org/) for further processing. This is a group project with each group consisting of one to six students. No student can participate in more than one group.
 ### Grade: 20%
-#### This Git repo contains the description of the third and final homework that uses this implementation of a log file generator in Scala. Students should clone this repo using the command ```git clone git@github.com:0x1DOCD00D/LogFileGenerator.git```.
 
 ## Preliminaries
 As part of the previous homework assignment you learned to create and manage your Git repository, create your application in Scala, create tests using widely popular Scalatest framework, and to configure your big data processing environments. Doing this homework is essential for successful completion of the rest of this course, since the course project will depend on this homework: create randomly generated log files that represent big data, parse and analyze them, change their content and structure and process them in the cloud using a big data analysis framework called Spark.
