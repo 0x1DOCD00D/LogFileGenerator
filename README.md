@@ -3,8 +3,6 @@
 ### Grade: 20%
 
 ## Preliminaries
-As part of the previous homework assignment you learned to create and manage your Git repository, create your application in Scala, create tests using widely popular Scalatest framework, and to configure your big data processing environments. Doing this homework is essential for successful completion of the rest of this course, since the course project will depend on this homework: create randomly generated log files that represent big data, parse and analyze them, change their content and structure and process them in the cloud using a big data analysis framework called Spark.
-
 First things first, if you haven't done so, you must create your account at either [BitBucket](https://bitbucket.org/) or [Github](https://github.com/), which are Git repo management systems. Please make sure that you write your name in your README.md in your repo as it is specified on the class roster. Since it is a large class, please use your UIC email address for communications and avoid emails from other accounts like funnybunny2000@gmail.com.
 
 Next, if you haven't done so, you will install [IntelliJ](https://www.jetbrains.com/student/) with your academic license, the JDK, the Scala runtime and the IntelliJ Scala plugin and the [Simple Build Toolkit (SBT)](https://www.scala-sbt.org/1.x/docs/index.html) and make sure that you can create, compile, and run Java and Scala programs. Please make sure that you can run [various Java tools from your chosen JDK between versions 8 and 16](https://docs.oracle.com/en/java/javase/index.html).
